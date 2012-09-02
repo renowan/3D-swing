@@ -1,0 +1,60 @@
+
+
+.poi1{ -webkit-transform: rotateX( 0deg ) rotateY( 0deg ) translate3d(170px,0px,0px); }
+.poi2{ -webkit-transform: rotateX( 0deg ) rotateY( 0deg ) translate3d(0px,0px,0px); }
+
+.cube {
+
+	position: absolute;
+	-webkit-transform-style: preserve-3d;
+
+}
+
+.cube li {
+	display: block;
+	position: absolute;
+	border: 0px solid black;
+	line-height: 196px;
+	font-size: 12px;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+}
+
+.cube.panels-backface-invisible li {
+	-webkit-backface-visibility: hidden;
+}
+
+.cube .front,
+.cube .back {
+	width: 20px;
+	height: 200px;
+}
+
+.cube .right,
+.cube .left {
+	width: 20px;
+	height: 200px;
+}
+
+.cube .top,
+.cube .bottom {
+	width: 20px;
+	height: 20px;
+}
+
+
+.cube .front  { background: hsla( 36, 95%, 30%, 1 ); }
+.cube .back   { background: hsla( 45, 100%, 30%, 1 ); }
+.cube .right  { background: hsla( 40, 100%, 25%, 1 ); }
+.cube .left   { background: hsla( 38, 95%, 30%, 1 ); }
+.cube .top    { background: hsla( 32, 100%, 20%, 1 ); }
+.cube .bottom { background: hsla( 40, 100%, 50%, 1 ); }
+
+.cube .front		{ -webkit-transform: rotateX( 0deg ) translate3d( 0px, 0px, 10px ) };
+.cube .back		{ -webkit-transform: rotateX( -180deg ) translate3d(0px,0px,10px); }
+.cube .back		{ -webkit-transform: rotateX( -180deg ) translate3d(0px,0px,10px); }
+.cube .right		{ -webkit-transform: rotateY(   90deg ) translate3d( 0px, 0px, 10px ); }
+.cube .left		{ -webkit-transform: rotateY(  -90deg ) translate3d( 0px, 0px, 10px ); }
+.cube .top		{ -webkit-transform: rotateX(   90deg ) translate3d( 0px, 0px, 10px ); }
+.cube .bottom	{ -webkit-transform: rotateX(  -90deg ) translate3d( 0px, 0px, 190px ); }
